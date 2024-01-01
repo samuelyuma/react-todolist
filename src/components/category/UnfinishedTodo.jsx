@@ -17,7 +17,7 @@ const UnfinishedTodo = ({ todo, onUpdateTodo, onEditStatus, onDeleteTodo }) => {
             <p className="hidden w-1/4 rounded border-2 border-[#323844] bg-[#2D323D] px-3 py-1.5 text-center text-white xl:inline">
                 {todo.timestampDate}
             </p>
-            <p className="hidden w-1/2 rounded border-2 border-[#323844] bg-[#2D323D] px-3 py-1.5 text-center text-white xl:inline 2xl:w-1/4">
+            <p className="hidden w-1/4 rounded border-2 border-[#323844] bg-[#2D323D] px-3 py-1.5 text-center text-white xl:inline 2xl:w-1/3">
                 {todo.timestampTime}
             </p>
             <input
