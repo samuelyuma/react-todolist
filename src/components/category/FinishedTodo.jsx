@@ -1,13 +1,7 @@
+/* eslint-disable react/prop-types */
 import { FaTrash } from "react-icons/fa6";
-import PropTypes from "prop-types";
 
 const FinishedTodo = ({ todo, onUpdateTodo, onDeleteTodo }) => {
-    FinishedTodo.propTypes = {
-        todo: PropTypes.array.isRequired,
-        onUpdateTodo: PropTypes.func.isRequired,
-        onDeleteTodo: PropTypes.func.isRequired,
-    };
-
     return (
         <main
             key={todo.id}

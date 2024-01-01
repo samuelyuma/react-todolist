@@ -1,5 +1,5 @@
+/* eslint-disable react/prop-types */
 import { FaArrowRightToBracket, FaTrash } from "react-icons/fa6";
-import PropTypes from "prop-types";
 
 const CategoryCard = ({
     category,
@@ -7,13 +7,6 @@ const CategoryCard = ({
     onUpdateCategory,
     onDeleteCategory,
 }) => {
-    CategoryCard.propTypes = {
-        category: PropTypes.array.isRequired,
-        onRedirectToCategory: PropTypes.func.isRequired,
-        onUpdateCategory: PropTypes.func.isRequired,
-        onDeleteCategory: PropTypes.func.isRequired,
-    };
-
     return (
         <main
             key={category.id}
