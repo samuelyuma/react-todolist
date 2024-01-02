@@ -6,13 +6,6 @@ export default {
             fontFamily: {
                 poppins: ["Poppins", "sans-serif"],
             },
-            colors: {
-                "dark-background": "#1D1F25",
-                "dark-input": "#2D323D",
-                "dark-input-border": "#323844",
-                "dark-blue": "#4062FF",
-                "dark-blue-hover": "#334ECC",
-            },
             spacing: {
                 // padding-x, size: 8px to 384px, viewport: 320px to 1280px
                 "fluid-page": "clamp(0.25rem, -7.6667rem + 39.5833vw, 24rem)",
