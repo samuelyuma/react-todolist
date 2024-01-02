@@ -99,13 +99,13 @@ const Home = () => {
                     },
                 }}
             />
-            <header className="font-poppins fixed top-0 w-full bg-dark-background py-12">
+            <header className="fixed top-0 w-full bg-gray-900 py-12 font-poppins">
                 <h1 className="text-center text-2xl font-semibold text-white">
                     ToDoList App
                 </h1>
             </header>
-            <main className="font-poppins h-dvh overflow-hidden scroll-smooth bg-dark-background px-fluid-page pt-32">
-                <section className="gap-fluid-input-field flex flex-col pb-8">
+            <main className="h-dvh overflow-hidden scroll-smooth bg-gray-900 px-fluid-page pt-32 font-poppins">
+                <section className="flex flex-col gap-fluid-input-field pb-8">
                     <h3 className="text-xl font-medium text-white">
                         Add new categories:
                     </h3>
@@ -114,25 +114,26 @@ const Home = () => {
                             type="text"
                             value={inputCategory}
                             onChange={handleInputChange}
-                            className="w-full rounded border-2 border-dark-input-border bg-dark-input px-3 py-1.5 text-white focus:border-2 focus:border-[#323844] focus:outline-none focus:ring-0"
+                            placeholder="Enter your category"
+                            className="w-full rounded border border-gray-700 bg-gray-800 px-3 py-1.5 text-white placeholder-gray-700 focus:border focus:border-gray-700 focus:outline-none focus:ring-0"
                         />
                         <button
                             type="submit"
-                            className="rounded bg-green-500 px-3.5 py-2 text-white duration-300 hover:bg-green-600"
+                            className="rounded border border-emerald-500 bg-emerald-500 px-3.5 py-2 text-white duration-300 hover:border-emerald-600 hover:bg-emerald-600"
                         >
                             <FaPlus />
                         </button>
                     </form>
                 </section>
-                <section className="gap-fluid-main-comp flex flex-col pb-16">
+                <section className="flex flex-col gap-fluid-main-comp pb-16">
                     <h3 className="text-xl font-medium text-white">
                         Categories:{" "}
                     </h3>
                     {categoryName.length === 0 ? (
-                        <p className="text-lg text-gray-500">{`There's no category at the moment.`}</p>
+                        <p className="text-lg text-gray-600">{`There's no category at the moment.`}</p>
                     ) : (
                         <div className="max-h-[595px] overflow-y-auto">
-                            <div className="grid grid-cols-1 gap-2 bg-dark-background transition-all md:grid-cols-1 lg:grid-cols-2 lg:gap-3 xl:grid-cols-3 xl:gap-3">
+                            <div className="grid grid-cols-1 gap-2 transition-all md:grid-cols-1 lg:grid-cols-2 lg:gap-3 xl:grid-cols-3 xl:gap-3">
                                 {categoryName.map((category) => (
                                     <CategoryCard
                                         key={category.id}

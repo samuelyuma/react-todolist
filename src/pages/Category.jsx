@@ -131,22 +131,22 @@ const Category = () => {
                     },
                 }}
             />
-            <header className="font-poppins fixed top-0 flex w-full items-center justify-center bg-dark-background px-fluid-page py-12 lg:justify-between">
+            <header className="fixed top-0 flex w-full items-center justify-center bg-gray-900 px-fluid-page py-12 font-poppins lg:justify-between">
                 <h1 className="hidden text-center text-2xl font-semibold text-white lg:inline">
                     ToDoList App
                 </h1>
                 <button
                     onClick={handleBackToHome}
-                    className="flex items-center gap-3 rounded bg-dark-blue px-4 py-2 text-sm font-medium text-white duration-300 hover:bg-dark-blue-hover"
+                    className="flex items-center gap-3 rounded bg-blue-500 px-4 py-2 text-sm font-medium text-white duration-300 hover:bg-blue-600"
                 >
                     <FaHouse />
                     <p>Back To Home</p>
                 </button>
             </header>
-            <main className="font-poppins h-dvh bg-dark-background px-fluid-page pt-32">
+            <main className="flex h-dvh flex-col gap-10 bg-gray-900 px-fluid-page pt-32 font-poppins">
                 <section className="flex items-center justify-between">
                     <h1 className="py-2 text-2xl font-semibold text-white">
-                        {`You are in the '${categoryName}' category 😁`}
+                        {`You are in the '${categoryName}' category.`}
                     </h1>
                     <div className="hidden text-end text-white duration-300 xl:inline">
                         {dateAndTime.toLocaleDateString()}
@@ -154,7 +154,7 @@ const Category = () => {
                         {dateAndTime.toLocaleTimeString()}
                     </div>
                 </section>
-                <section className="gap-fluid-main-comp flex flex-col pt-8">
+                <section className="flex flex-col gap-fluid-main-comp">
                     <h3 className="text-xl font-medium text-white">
                         Add new task:{" "}
                     </h3>
@@ -164,17 +164,17 @@ const Category = () => {
                             value={inputContent}
                             onChange={handleInputChange}
                             placeholder="Enter your task here"
-                            className="w-full rounded border-2 border-dark-input-border bg-dark-input px-3 py-1.5 text-white focus:border-2 focus:border-[#323844] focus:outline-none focus:ring-0"
+                            className="w-full rounded border border-gray-700 bg-gray-800 px-3 py-1.5 text-white placeholder-gray-700 focus:border focus:border-gray-700 focus:outline-none focus:ring-0"
                         />
                         <button
                             type="submit"
-                            className="rounded bg-green-500 px-3.5 py-2 text-white duration-300 hover:bg-green-600"
+                            className="hover:border-emeral-600 rounded border border-emerald-500 bg-emerald-500 px-3.5 py-2 text-white duration-300 hover:bg-emerald-600"
                         >
                             <FaPlus />
                         </button>
                     </form>
                 </section>
-                <section className="gap-fluid-main-comp mt-8 flex flex-col">
+                <section className="flex flex-col gap-fluid-main-comp">
                     <h2 className="text-xl font-medium text-white">
                         On-going Tasks
                     </h2>
@@ -194,7 +194,7 @@ const Category = () => {
                         </div>
                     )}
                 </section>
-                <section className="gap-fluid-main-comp flex flex-col pb-16 pt-8">
+                <section className="flex flex-col gap-fluid-main-comp pb-16">
                     <h2 className="text-xl font-medium text-white">
                         Completed Tasks
                     </h2>
