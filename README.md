@@ -4,6 +4,8 @@ Simple todolist for CRUD implementation that uses local storage.
 
 ## ⚙️ Demo
 
+[Visit the website](https://sykxyz-react-todolist.vercel.app/)
+
 ## ⚡ Technologies
 
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
