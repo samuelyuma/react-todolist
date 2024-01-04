@@ -21,6 +21,7 @@ const FinishedTodo = ({ todo, onUpdateTodo, onDeleteTodo }) => {
             />
             <button
                 onClick={() => onDeleteTodo(todo)}
+                aria-label="Delete task"
                 className="rounded border border-red-500 bg-red-500 px-3 py-2.5 text-white duration-300 hover:border-red-600 hover:bg-red-600"
             >
                 <FaTrash />

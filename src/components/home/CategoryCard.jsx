@@ -16,6 +16,7 @@ const CategoryCard = ({ category, onRedirectToCategory, onDeleteCategory }) => {
             <button
                 onClick={() => onDeleteCategory(category)}
                 type="button"
+                aria-label="Delete category"
                 className="rounded bg-white px-2 py-2 font-semibold text-blue-500 duration-300 hover:bg-slate-200"
             >
                 <FaTrash />

@@ -110,6 +110,7 @@ const Home = () => {
                         />
                         <button
                             type="submit"
+                            aria-label="Add new category"
                             className="rounded border border-emerald-500 bg-emerald-500 px-3.5 py-2 text-white duration-300 hover:border-emerald-600 hover:bg-emerald-600"
                         >
                             <FaPlus />
