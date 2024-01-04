@@ -9,7 +9,7 @@ const CategoryCard = ({ category, onRedirectToCategory, onDeleteCategory }) => {
         >
             <p
                 onClick={() => onRedirectToCategory(category)}
-                className="w-full cursor-pointer rounded bg-blue-500 py-4 pl-5 text-lg font-medium text-white"
+                className="w-full cursor-pointer rounded bg-blue-500 py-3 pl-5 text-lg font-medium text-white"
             >
                 {category.name}
             </p>
