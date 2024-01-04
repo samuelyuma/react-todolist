@@ -147,9 +147,9 @@ const Category = () => {
             </header>
             <main className="flex h-dvh flex-col gap-10 bg-gray-900 px-fluid-page pt-32 font-poppins">
                 <section className="flex items-center justify-between">
-                    <h1 className="py-2 text-2xl font-semibold text-white">
+                    <h2 className="py-2 text-2xl font-semibold text-white">
                         {`You are in the '${categoryName}' category.`}
-                    </h1>
+                    </h2>
                     <div className="hidden text-end text-white duration-300 xl:inline">
                         {dateAndTime.toLocaleDateString()}
                         <br />
@@ -178,9 +178,9 @@ const Category = () => {
                     </form>
                 </section>
                 <section className="flex flex-col gap-fluid-main-comp">
-                    <h2 className="text-xl font-medium text-white">
+                    <h3 className="text-xl font-medium text-white">
                         On-going Tasks
-                    </h2>
+                    </h3>
                     {unfinishedTodo.length === 0 ? (
                         <p className="text-lg text-gray-500">{`There's no task at the moment.`}</p>
                     ) : (
@@ -198,9 +198,9 @@ const Category = () => {
                     )}
                 </section>
                 <section className="flex flex-col gap-fluid-main-comp pb-16">
-                    <h2 className="text-xl font-medium text-white">
+                    <h3 className="text-xl font-medium text-white">
                         Completed Tasks
-                    </h2>
+                    </h3>
                     <div>
                         {finishedTodo.length === 0 ? (
                             <p className="text-lg text-gray-500">{`There's no task at the moment.`}</p>

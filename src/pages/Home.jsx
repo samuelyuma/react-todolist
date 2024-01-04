@@ -97,9 +97,9 @@ const Home = () => {
             </header>
             <main className="h-dvh overflow-hidden scroll-smooth bg-gray-900 px-fluid-page pt-32 font-poppins">
                 <section className="flex flex-col gap-fluid-input-field pb-8">
-                    <h3 className="text-xl font-medium text-white">
+                    <h2 className="text-xl font-medium text-white">
                         Add new categories:
-                    </h3>
+                    </h2>
                     <form onSubmit={handleNewCategory} className="flex gap-2">
                         <input
                             type="text"
