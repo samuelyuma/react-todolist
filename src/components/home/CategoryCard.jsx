@@ -1,31 +1,25 @@
 /* eslint-disable react/prop-types */
-import { FaArrowRightToBracket, FaTrash } from "react-icons/fa6";
+import { FaTrash } from "react-icons/fa6";
 
 const CategoryCard = ({ category, onRedirectToCategory, onDeleteCategory }) => {
     return (
         <main
             key={category.id}
-            className="flex justify-between rounded bg-blue-500 px-5 py-3 font-poppins shadow-xl"
+            className="flex items-center rounded bg-blue-500 pr-5 font-poppins"
         >
-            <p className="mr-2 w-full bg-blue-500 text-lg font-medium text-white focus:outline-none">
+            <p
+                onClick={() => onRedirectToCategory(category)}
+                className="w-full cursor-pointer rounded bg-blue-500 py-4 pl-5 text-lg font-medium text-white"
+            >
                 {category.name}
             </p>
-            <section className="flex gap-2">
-                <button
-                    onClick={() => onRedirectToCategory(category)}
-                    type="button"
-                    className="rounded bg-white px-2 py-1 font-semibold text-blue-500 duration-300 hover:bg-slate-200"
-                >
-                    <FaArrowRightToBracket />
-                </button>
-                <button
-                    onClick={() => onDeleteCategory(category)}
-                    type="button"
-                    className="rounded bg-white px-2 py-1 font-semibold text-blue-500 duration-300 hover:bg-slate-200"
-                >
-                    <FaTrash />
-                </button>
-            </section>
+            <button
+                onClick={() => onDeleteCategory(category)}
+                type="button"
+                className="rounded bg-white px-2 py-2 font-semibold text-blue-500 duration-300 hover:bg-slate-200"
+            >
+                <FaTrash />
+            </button>
         </main>
     );
 };
