@@ -98,6 +98,7 @@ const Home = () => {
                         },
                     },
                 }}
+                className="font-poppins"
             />
             <header className="fixed top-0 w-full bg-gray-900 py-12 font-poppins">
                 <h1 className="text-center text-2xl font-semibold text-white">

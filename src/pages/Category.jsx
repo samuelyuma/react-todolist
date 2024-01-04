@@ -179,7 +179,7 @@ const Category = () => {
                         On-going Tasks
                     </h2>
                     {unfinishedTodo.length === 0 ? (
-                        <p className="text-lg font-medium text-gray-500">{`There's no task at the moment.`}</p>
+                        <p className="text-lg text-gray-500">{`There's no task at the moment.`}</p>
                     ) : (
                         <div className="max-h-[180px] overflow-y-auto">
                             {unfinishedTodo.map((todo) => (
@@ -200,7 +200,7 @@ const Category = () => {
                     </h2>
                     <div>
                         {finishedTodo.length === 0 ? (
-                            <p className="text-lg font-medium text-gray-500">{`There's no task at the moment.`}</p>
+                            <p className="text-lg text-gray-500">{`There's no task at the moment.`}</p>
                         ) : (
                             <div className="max-h-[180px] overflow-y-auto">
                                 {finishedTodo.map((todo) => (
