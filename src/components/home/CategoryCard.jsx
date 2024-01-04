@@ -1,22 +1,15 @@
 /* eslint-disable react/prop-types */
 import { FaArrowRightToBracket, FaTrash } from "react-icons/fa6";
 
-const CategoryCard = ({
-    category,
-    onRedirectToCategory,
-    onUpdateCategory,
-    onDeleteCategory,
-}) => {
+const CategoryCard = ({ category, onRedirectToCategory, onDeleteCategory }) => {
     return (
         <main
             key={category.id}
             className="flex justify-between rounded bg-blue-500 px-5 py-3 font-poppins shadow-xl"
         >
-            <input
-                value={category.name}
-                onChange={(event) => onUpdateCategory(event, category)}
-                className="mr-2 w-full bg-blue-500 text-lg font-medium text-white focus:outline-none"
-            />
+            <p className="mr-2 w-full bg-blue-500 text-lg font-medium text-white focus:outline-none">
+                {category.name}
+            </p>
             <section className="flex gap-2">
                 <button
                     onClick={() => onRedirectToCategory(category)}

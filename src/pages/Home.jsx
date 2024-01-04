@@ -57,16 +57,6 @@ const Home = () => {
         navigate(`/${category.name}`);
     }
 
-    function handleUpdateCategory(event, category) {
-        setCategoryName((categories) =>
-            categories.map((item) =>
-                item.id === category.id
-                    ? { ...item, name: event.target.value }
-                    : item,
-            ),
-        );
-    }
-
     function handleDeleteCategory(category) {
         setCategoryName((categories) =>
             categories.filter((item) => item.id !== category.id),
@@ -142,7 +132,6 @@ const Home = () => {
                                         onRedirectToCategory={
                                             handleRedirectToCategory
                                         }
-                                        onUpdateCategory={handleUpdateCategory}
                                         onDeleteCategory={handleDeleteCategory}
                                     />
                                 ))}
