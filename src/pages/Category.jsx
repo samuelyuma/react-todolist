@@ -113,6 +113,7 @@ const Category = () => {
                 toastOptions={{
                     duration: 3000,
                     style: {
+                        fontFamily: "Poppins",
                         color: "#FFFFFF",
                         background: "#2D323D",
                         border: "2px solid #323844",

@@ -71,6 +71,7 @@ const Home = () => {
                 toastOptions={{
                     duration: 3000,
                     style: {
+                        fontFamily: "Poppins",
                         color: "#FFFFFF",
                         background: "#2D323D",
                         border: "2px solid #323844",
@@ -88,7 +89,6 @@ const Home = () => {
                         },
                     },
                 }}
-                className="font-poppins"
             />
             <header className="fixed top-0 w-full bg-gray-900 py-12 font-poppins">
                 <h1 className="text-center text-2xl font-semibold text-white">
